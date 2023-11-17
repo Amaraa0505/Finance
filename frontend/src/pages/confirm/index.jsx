@@ -4,13 +4,30 @@ export default function Confirm() {
   return (
     <div className="">
       <div className="flex justify-center mb-8">
-        <div>
+        <div className="flex ">
           <img src="./geldlogo.svg"></img>
         </div>
-        <div>
+        <div className="flex ">
           <img src="./geld.svg"></img>
         </div>
+        {/* <div>
+          <img src="./camera.svg"></img>
+        </div> */}
+        <div className="flex">
+          <div className="bg-gray-400 w-7 h-7 rounded-full flex items-center justify-center">
+            1
+          </div>
 
+          <div className="bg-gray-400 w-20 h-1 flex items-center justify-center"></div>
+          <div className="bg-gray-400 w-7 h-7 rounded-full flex items-center justify-center">
+            2
+          </div>
+
+          <div className="bg-gray-400 w-20 h-1 flex items-center justify-center"></div>
+          <div className="bg-gray-400 w-7 h-7 rounded-full flex items-center justify-center">
+            3
+          </div>
+        </div>
         <div className="flex-col items-center flex">
           <div className="w-96 h-96">
             <img src="./confirm.svg"></img>
