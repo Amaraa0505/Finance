@@ -1,7 +1,10 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-export default function SignUp() {
+export default function SignUp({ confirm }) {
+  const router = useRouter();
+
   return (
     <div className="flex h-screen">
       <div className="flex-1 justify-center items-center flex">
@@ -40,8 +43,11 @@ export default function SignUp() {
               placeholder="Re-assword"
               className="rounded-xl h-10 p-4 w-full border-2 bg-slate-200"
             ></input>
-            <button className="bg-blue-600 w-full rounded-xl h-10 border-2 text-white">
-              <Link href="./confirm"> Sign Up</Link>
+            <button
+              className="bg-blue-600 w-full rounded-xl h-10 border-2 text-white"
+              onClick={() => router.push("/confirm")}
+            >
+              Sign Up
             </button>
             <div className="flex gap-4 m-20">
               <p className="flex justify-center">Already have account?</p>
