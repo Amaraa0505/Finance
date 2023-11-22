@@ -5,28 +5,27 @@ export default function Confirm() {
   const router = useRouter();
   return (
     <div className="">
-      <div className="">
-        <div className="flex justify-center mt-8">
-          <img src="./geldlogo.svg"></img>
-          <img src="./geld.svg"></img>
+      <div className="flex justify-center mt-8 items-center">
+        <img src="./geldlogo.svg"></img>
+        <img src="./geld.svg"></img>
 
-          <div className="flex">
-            <div className="bg-gray-400 w-7 h-7 rounded-full flex items-center justify-center">
-              1
-            </div>
+        <div className="flex">
+          <div className="bg-gray-400 w-7 h-7 rounded-full flex items-center justify-center">
+            1
+          </div>
 
-            <div className="bg-gray-400 w-20 h-1 flex items-center justify-center mt-3"></div>
-            <div className="bg-gray-400 w-7 h-7 rounded-full flex items-center justify-center">
-              2
-            </div>
+          <div className="bg-gray-400 w-20 h-1 flex items-center justify-center mt-3"></div>
+          <div className="bg-gray-400 w-7 h-7 rounded-full flex items-center justify-center">
+            2
+          </div>
 
-            <div className="bg-gray-400 w-20 h-1 flex items-center justify-center mt-3"></div>
-            <div className="bg-gray-400 w-7 h-7 rounded-full flex items-center justify-center">
-              3
-            </div>
+          <div className="bg-gray-400 w-20 h-1 flex items-center justify-center mt-3"></div>
+          <div className="bg-gray-400 w-7 h-7 rounded-full flex items-center justify-center">
+            3
           </div>
         </div>
       </div>
+
       <div className="flex justify-center items-center mt-96">
         <div className="flex-col items-center flex">
           <img src="./Frame 10.svg"></img>

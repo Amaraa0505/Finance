@@ -67,8 +67,8 @@ const DoughnutChart = () => {
       <div className="flex items-center gap-4 w-96 h-96 bg-orange-700">
         <Doughnut className="" data={data} />
         <div className="flex gap-4 flex-col">
-          {piedata.map((e) => (
-            <p>{e.label}</p>
+          {piedata.map((e, i) => (
+            <p key={i}>{e.label}</p>
           ))}
         </div>
       </div>
