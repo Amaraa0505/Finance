@@ -60,17 +60,23 @@ const piedata = [
 ];
 
 const DoughnutChart = () => {
+  const piedata = [1, 2, 3, 4];
   const options = {};
   return (
-    <div>
-      <div></div>
-      <div className="flex items-center gap-4 w-96 h-96 bg-orange-700">
+    <div className="w-[400px] h-46 bg-white rounded-xl">
+      <div className="flex justify-between p-8">
+        <h1 className="font-semibold text-xl">Income - Expense</h1>
+        <h1 className="text-gray-500">Jun1 - Nov 30</h1>
+      </div>
+      <div className="w-20">
         <Doughnut className="" data={data} />
-        <div className="flex gap-4 flex-col">
-          {piedata.map((e, i) => (
-            <p key={i}>{e.label}</p>
-          ))}
-        </div>
+      </div>
+      <div className="flex gap-4 bg-black flex-col ">
+        {piedata.map((e, i) => (
+          <p className="" key={i}>
+            {e.label}
+          </p>
+        ))}
       </div>
     </div>
   );
