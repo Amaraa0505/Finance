@@ -18,7 +18,7 @@ export default function Balance() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center items-center mt-64">
+      <div className="flex justify-center items-center mt-24">
         <div className="flex-col items-center flex">
           <img src="Frame 10 (1).svg"></img>
           <h1 className="font-bold text-xl">Set up your cash Balance</h1>

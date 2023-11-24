@@ -18,7 +18,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center mt-64 ">
+      <div className="flex justify-center items-center mt-24 ">
         <div className="flex-col items-center flex">
           <img src="Frame 10 (2).svg" className="flex justify-center"></img>
           <h1 className="font-bold text-xl flex justify-center"> Good Job!</h1>
