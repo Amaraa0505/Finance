@@ -120,9 +120,9 @@ const Records = () => {
                 />
                 <img src="./menu.svg" className="w-12"></img>
                 <p>{Data.name}</p>
-                <p className="flex ml-96">
+                <div className="flex ml-96">
                   <p>{Data.price}</p>
-                </p>
+                </div>
                 {/* <p className="">
                   <h1 className="bg-gray-600 w-96 h-[2px] rounded-3xl"></h1>
                 </p> */}
@@ -141,7 +141,7 @@ const Records = () => {
                 <img src="./menu.svg" className="w-12"></img>
                 <p>{Data.name}</p>
                 <p className="flex ml-96">
-                  <p>{Data.price}</p>
+                  <p className="">{Data.price}</p>
                 </p>
                 {/* <p className="">
                   <h1 className="bg-gray-600 w-96 h-[2px] rounded-3xl"></h1>

@@ -3,6 +3,7 @@ import React from "react";
 import Doughnut from "../../components/Doughnut";
 import Header from "../../components/Header";
 import BarChart from "../../components/BarChart";
+// import Form from "../components/Form";
 
 export default function Home() {
   const Datas = [
@@ -17,7 +18,7 @@ export default function Home() {
         <Header />
       </div>
       <div className="w-full bg-slate-100 ">
-        <div className="h-[50%] p-12 ">
+        <div className="h-[50%] p-12 flex flex-col gap-7 ">
           <div className=" flex justify-center gap-6 ">
             <div className="w-[400px] h-46 bg-blue-600 rounded-xl ">
               <div className="flex gap-2 p-10">
@@ -59,11 +60,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex justify-evenly ">
+          <div className="w-full flex justify-center gap-20 ">
             <div className="bg-white h-46 w-[400px] rounded-xl">
               <h1 className="font-semibold text-xl p-8">Income - Expenses</h1>
             </div>
-            <div className="w-20">
+            <div className="w-fit">
               <Doughnut />
             </div>
           </div>
@@ -73,8 +74,8 @@ export default function Home() {
             <h1 className="font-bolds">Last Records</h1>
           </div>
           <div className="flex gap-4 flex-col">
-            {Datas.map((Data) => (
-              <div className="flex  ml-12 gap-4">
+            {Datas.map((Data, index) => (
+              <div key={index} className="flex  ml-12 gap-4">
                 <img src="./Group 8.svg"></img>
                 <div className="flex justify-between">
                   <p>{Data.name}</p>

@@ -63,7 +63,7 @@ const DoughnutChart = () => {
   const piedata = [1, 2, 3, 4];
   const options = {};
   return (
-    <div className="w-[400px] h-46 bg-white rounded-xl">
+    <div className="w-[400px] h-46 bg-white rounded-xl p-4">
       <div className="flex justify-between p-8">
         <h1 className="font-semibold text-xl">Income - Expense</h1>
         <h1 className="text-gray-500">Jun1 - Nov 30</h1>
