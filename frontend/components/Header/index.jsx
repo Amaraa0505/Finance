@@ -1,9 +1,9 @@
 import React from "react";
 import { useRouter } from "next/router";
-import "./header.module.css";
+
 import { useState } from "react";
 import Form from "./Form";
-import Add from "./add";
+import Add from "./Add";
 
 const Header = () => {
   const router = useRouter();
