@@ -2,10 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/log": "pages/log.js",
-  "/SignUp": "pages/SignUp.js",
-  "/balance": "pages/balance.js",
-  "/confirm": "pages/confirm.js",
-  "/records": "pages/records.js"
+  "/records": "pages/records.js",
+  "/income": "pages/income.js",
+  "/": "pages/index.js"
 }

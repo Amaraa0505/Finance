@@ -3,8 +3,6 @@ import { useRouter } from "next/router";
 
 import { useState } from "react";
 
-
-
 const Header = () => {
   const router = useRouter();
   const [isOpen, setisOpen] = useState(false);
@@ -27,21 +25,7 @@ const Header = () => {
           >
             + Record
           </button>
-          {/* <Form
-            open={open}
-            closeForm={closeForm}
-            selectedUser={selectedUser}
-            setSelectedUser={setSelectedUser}
-            refresh={refresh}
-            setRefresh={setRefresh}
-          /> */}
 
-          {/* <UserList
-            users={userList}
-            handleUpdate={handleUpdate}
-            handleDelete={handleDelete}
-          />
-          <Toast count={10} message="Hello" /> */}
           <img src="./Avatar.svg" className="w-12"></img>
         </div>
       </div>
