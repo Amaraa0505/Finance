@@ -17,7 +17,7 @@ const signin = async (req, res) => {
     const { userEmail, userPassword } = req.body;
 
     const findUser =
-      await sql`SELECT name, email, password FROM users WHERE email='${userEmail}' OR 1=1`;
+      await sql`SELECT name, email, password FROM users WHERE email='${userEmail}' `;
 
     if (findUser.length === 0) {
       return res.status(400).json({ message: "user not found" });
@@ -29,7 +29,7 @@ const signin = async (req, res) => {
       return res.status(400).json({ message: "wrong username or password" });
     }
 
-    const { password, ...user } = findUser[0];
+    const { password, ...user } = findUser[0]; 
 
     res.status(201).json({ message: "success", user });
   } catch (error) {

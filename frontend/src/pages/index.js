@@ -1,9 +1,7 @@
 import React from "react";
-// import Navbar from "../../components/Navbar";
-import Doughnut from "../../components/Doughnut";
+import Doughnut from "../Doughnut";
 import Header from "../../components/Header";
-import BarChart from "../../components/BarChart";
-// import Form from "../components/Form";
+
 
 export default function Home() {
   const Datas = [
