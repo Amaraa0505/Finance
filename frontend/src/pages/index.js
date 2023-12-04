@@ -1,7 +1,6 @@
 import React from "react";
 import Doughnut from "../Doughnut";
-import Header from "../../components/Header";
-
+import Header from "../components/Header";
 
 export default function Home() {
   const Datas = [

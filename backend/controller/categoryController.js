@@ -29,4 +29,32 @@ const deleteCategory = async (req, res) => {
   }
 };
 
-module.exports = { addCategory, getCategory };
+const addTransaction = async (req, res) => {
+  try {
+    const {
+      userId,
+      name,
+      amount,
+      transaction_type,
+      description,
+      currency_type,
+      category_id,
+    } = req.body;
+    await sql`INSERT INTO transaction (userId, name, amount, transaction_type, description, currency_type, category_id) VALUES (${userId}, ${name}, ${amount}, ${transaction_type}, ${description}, ${currency_type}, ${category_id} )`;
+    res.status(201).json({ message: "transaction success" });
+  } catch (error) {
+    console.log("ERR", error);
+    res.status(500).json({ message: "transaction failed" });
+  }
+};
+
+const getTransaction = async (req, res) => {
+  try {
+    const transaction = await sql`SELECT * FROM transaction`;
+    res.status(201).json({ transaction });
+  } catch (error) {
+    res.status(500).json({ message: "get failed" });
+  }
+};
+
+module.exports = { addCategory, getCategory, getTransaction, addTransaction };

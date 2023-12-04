@@ -14,10 +14,26 @@ const createTables = async () => {
             createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
   `;
+  console.log("created table");
+};
+const createTransaction = async () => {
+  console.log("creating table...");
+  await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"; `;
+
+  await sql`CREATE TABLE transaction (
+    userId INT FOREIGN KEY,
+    name Text,
+    amount REAL NOT NULL,
+    transaction_type ENUM("INC", "EXP"),
+    description TEXT,
+    createdAt TIMESTAMP, DEFAULT:NOW(),
+    updatedAt TIMESTAMP,  DEFAULT:NOW(),
+    category_id INT FOREIGN KEY
+    )`;
   console.log("CREATED TABLE.");
 };
 
 // const insertData = () => {};
-
+createTransaction();
 createTables();
 // insertData();

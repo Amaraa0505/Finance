@@ -4,6 +4,6 @@ const { imageUpload } = require("../utils/upload");
 
 const router = Router();
 
-router.route("/upload").post(imageUpload.single("space"), upload);
+router.route("/upload").post(imageUpload.single("image"), upload);
 
 module.exports = router;

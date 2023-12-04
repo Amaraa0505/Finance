@@ -1,5 +1,8 @@
-const {Router} = require ("express");
-const {addCategory, getCategory} = require ("../controller/categoryController");
+const { Router } = require("express");
+const {
+  addCategory,
+  getCategory,
+} = require("../controller/categoryController");
 
 const router = Router();
 
